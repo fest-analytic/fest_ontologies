@@ -1,0 +1,1179 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/linndfors/ontologies/place"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/linndfors/ontologies/place">
+    <Prefix name="" IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Alcoholic_Beverage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Aperitif"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Bar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Bartender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cafe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Chef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cook"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cooking_Assistant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Customer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Dessert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Drink_Menu_Item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Employee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Food_Menu_Item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Ingredients"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Main"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Menu_Item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Non-Alcoholic_Beverage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Owner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Pab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#People"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Restaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Shop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Side"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Sous_Chef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Supplier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Waiter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#assists"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#attend"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#cooked"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#cooks"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#delivers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#drinks"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#eats"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isAssistedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isCookedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isDeliveredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isDrunkBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isEatenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isMadeBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isMadeUpOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isManagedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isNeededFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isOrderedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isPreparedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isSuppliedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isWaitedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#manages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#orders"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#prepares"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#seats"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#sitsAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#supplies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#waits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#work_at"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasCalories"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasCost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasExpiry"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasLoggedHours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSalary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSeatingCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasVolume"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isAboveDrinkingAge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#baked_potato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#bobby"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#cake"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#carl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#dave"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#escargot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#farmer_steve"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#george_michael"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#ice_tea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#jeff"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#orange_juice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#owner_mcownerface"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#pepsi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#raw_beef"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#steak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#sue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#wally"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#wine"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Customer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#attend"/>
+            <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Place"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Employee"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#work_at"/>
+            <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Place"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Non-Alcoholic_Beverage"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Drink_Menu_Item"/>
+            <ObjectComplementOf>
+                <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Alcoholic_Beverage"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Alcoholic_Beverage"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Drink_Menu_Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Aperitif"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Food_Menu_Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Bar"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Bartender"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cafe"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Chef"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cook"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cook"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cooking_Assistant"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cook"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Customer"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Dessert"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Food_Menu_Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Drink_Menu_Item"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Menu_Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Employee"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Food_Menu_Item"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Menu_Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Main"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Food_Menu_Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Manager"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Non-Alcoholic_Beverage"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Drink_Menu_Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Owner"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Pab"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Place"/>
+        <ObjectIntersectionOf>
+            <ObjectComplementOf>
+                <ObjectUnionOf>
+                    <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Shop"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#has"/>
+                        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Table"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectUnionOf>
+            </ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#has"/>
+                <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Table"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Place"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#has"/>
+            <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Menu_Item"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Restaurant"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Shop"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Side"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Food_Menu_Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Sous_Chef"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cook"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Supplier"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Waiter"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Employee"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Alcoholic_Beverage"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Non-Alcoholic_Beverage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Aperitif"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Dessert"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Main"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Side"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Chef"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cooking_Assistant"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Sous_Chef"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Customer"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Employee"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Owner"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Supplier"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Drink_Menu_Item"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Food_Menu_Item"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Ingredients"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Menu_Item"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#People"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Table"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Side"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#baked_potato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cooking_Assistant"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#bobby"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Dessert"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#cake"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Bartender"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#carl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Chef"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#dave"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Aperitif"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#escargot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Supplier"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#farmer_steve"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Manager"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#george_michael"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Non-Alcoholic_Beverage"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#ice_tea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Customer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#jeff"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Non-Alcoholic_Beverage"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#orange_juice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Owner"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#owner_mcownerface"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Non-Alcoholic_Beverage"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#pepsi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Ingredients"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#raw_beef"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Main"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#steak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Sous_Chef"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#sue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Table"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Table"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Table"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Table"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Table"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Waiter"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#wally"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Alcoholic_Beverage"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#wine"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#assists"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#bobby"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#dave"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#prepares"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#carl"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#wine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#supplies"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#farmer_steve"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#raw_beef"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#manages"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#george_michael"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#carl"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#drinks"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#jeff"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#wine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#eats"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#jeff"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#escargot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#orders"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#jeff"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#steak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#sitsAt"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#jeff"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isCookedBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#raw_beef"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#jeff"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isMadeUpOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#steak"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#raw_beef"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#assists"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#sue"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#dave"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#cooks"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#sue"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#escargot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#delivers"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#wally"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#cake"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#waits"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#wally"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasCalories"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#baked_potato"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">123</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasPrice"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#baked_potato"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasLoggedHours"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#bobby"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasName"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#bobby"/>
+        <Literal>Bobby</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSalary"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#bobby"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasLoggedHours"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#carl"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSalary"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#carl"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasLoggedHours"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#dave"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSalary"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#dave"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasLoggedHours"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#george_michael"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSalary"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#george_michael"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasCalories"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#ice_tea"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasPrice"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#ice_tea"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasCalories"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#orange_juice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasPrice"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#orange_juice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasCalories"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#pepsi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">250</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasPrice"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#pepsi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">13.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasCost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#raw_beef"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasExpiry"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#raw_beef"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSalary"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#sue"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSalary"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#sue"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSeatingCapacity"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSeatingCapacity"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSeatingCapacity"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSeatingCapacity"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSeatingCapacity"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#table_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasLoggedHours"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#wally"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSalary"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#wally"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#assists"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isAssistedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#cooked"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isCookedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#cooks"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isMadeBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#delivers"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isDeliveredBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#drinks"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isDrunkBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#eats"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isEatenBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isMadeUpOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isNeededFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isManagedBy"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#manages"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isOrderedBy"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#orders"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isPreparedBy"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#prepares"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isSuppliedBy"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#supplies"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isWaitedBy"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#waits"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#seats"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#sitsAt"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#sitsAt"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#manages"/>
+    </TransitiveObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isManagedBy"/>
+    </ReflexiveObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#manages"/>
+    </ReflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#assists"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cooking_Assistant"/>
+            <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Sous_Chef"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#cooked"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cook"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#cooks"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cook"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#delivers"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Waiter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#drinks"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#eats"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isAssistedBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Chef"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isCookedBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Ingredients"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isDeliveredBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Menu_Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isDrunkBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Drink_Menu_Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isEatenBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Food_Menu_Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isMadeBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Food_Menu_Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isMadeUpOf"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Menu_Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isManagedBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Employee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isNeededFor"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Ingredients"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isOrderedBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Menu_Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isPreparedBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Drink_Menu_Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isSuppliedBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Ingredients"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isWaitedBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Table"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#manages"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Manager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#orders"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#prepares"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Bartender"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#seats"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Table"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#sitsAt"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#supplies"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Supplier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#waits"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Waiter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#assists"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Chef"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#cooked"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Ingredients"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#cooks"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Food_Menu_Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#delivers"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Menu_Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#drinks"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Drink_Menu_Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#eats"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Food_Menu_Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isAssistedBy"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cooking_Assistant"/>
+            <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Sous_Chef"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isCookedBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cook"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isDeliveredBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Waiter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isDrunkBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isEatenBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isMadeBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Cook"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isMadeUpOf"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Ingredients"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isManagedBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Manager"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isNeededFor"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Menu_Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isOrderedBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isPreparedBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Bartender"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isSuppliedBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Supplier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isWaitedBy"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Waiter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#manages"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Employee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#orders"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Menu_Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#prepares"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Drink_Menu_Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#seats"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#sitsAt"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Table"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#supplies"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Ingredients"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#waits"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Table"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasCost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasExpiry"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasPrice"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSalary"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSeatingCapacity"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasVolume"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isAboveDrinkingAge"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasCalories"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Menu_Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasCost"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Ingredients"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasExpiry"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Ingredients"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasLoggedHours"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Employee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasName"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Menu_Item"/>
+            <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#People"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasPrice"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Menu_Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSalary"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Employee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSeatingCapacity"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Table"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasVolume"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Alcoholic_Beverage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isAboveDrinkingAge"/>
+        <Class IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasCalories"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasCost"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasExpiry"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasLoggedHours"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">168</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasPrice"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSalary"/>
+        <Datatype abbreviatedIRI="xsd:unsignedLong"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasSeatingCapacity"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#hasVolume"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:double"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal>0.0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal>100.0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/wilhelm/ontologies/2017/2/untitled-ontology-6#isAboveDrinkingAge"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

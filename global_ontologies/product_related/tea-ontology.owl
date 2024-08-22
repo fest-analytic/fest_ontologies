@@ -1,0 +1,1623 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.tea.com//ontologies/tea.owl#"
+     xml:base="http://www.tea.com//ontologies/tea.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.tea.com//ontologies/tea.owl">
+        <rdfs:comment>A tea ontology that describes various kinds of tea.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#hasAdditionalIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.tea.com//ontologies/tea.owl#hasAdditionalIngredient">
+        <rdfs:subPropertyOf rdf:resource="http://www.tea.com//ontologies/tea.owl#hasIngredient"/>
+        <owl:inverseOf rdf:resource="http://www.tea.com//ontologies/tea.owl#isAdditionalIngredientOf"/>
+        <rdfs:domain rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+        <rdfs:range rdf:resource="http://www.tea.com//ontologies/tea.owl#Ingredient"/>
+        <rdfs:comment>Имеет дополнительный ингредиент (мед, сахар и т.д.)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#hasFlavourAddition -->
+
+    <owl:ObjectProperty rdf:about="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition">
+        <rdfs:subPropertyOf rdf:resource="http://www.tea.com//ontologies/tea.owl#hasIngredient"/>
+        <owl:inverseOf rdf:resource="http://www.tea.com//ontologies/tea.owl#isFlavourAdditionOf"/>
+        <rdfs:domain rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+        <rdfs:range rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition"/>
+        <rdfs:comment>Имеет вкусовую добавку</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.tea.com//ontologies/tea.owl#hasIngredient">
+        <owl:inverseOf rdf:resource="http://www.tea.com//ontologies/tea.owl#isIngredientOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:comment>Имеет ингредиент</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#hasTeaBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.tea.com//ontologies/tea.owl#hasTeaBase">
+        <rdfs:subPropertyOf rdf:resource="http://www.tea.com//ontologies/tea.owl#hasIngredient"/>
+        <owl:inverseOf rdf:resource="http://www.tea.com//ontologies/tea.owl#isTeaBaseOf"/>
+        <rdfs:domain rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+        <rdfs:range rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaType"/>
+        <rdfs:comment>Имеет основу на таком-то чае (черном, зеленом и т.д.)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#isAdditionalIngredientOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.tea.com//ontologies/tea.owl#isAdditionalIngredientOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.tea.com//ontologies/tea.owl#isIngredientOf"/>
+        <rdfs:domain rdf:resource="http://www.tea.com//ontologies/tea.owl#Ingredient"/>
+        <rdfs:range rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#isFlavourAdditionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.tea.com//ontologies/tea.owl#isFlavourAdditionOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.tea.com//ontologies/tea.owl#isIngredientOf"/>
+        <rdfs:domain rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition"/>
+        <rdfs:range rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#isIngredientOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.tea.com//ontologies/tea.owl#isIngredientOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#isTeaBaseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.tea.com//ontologies/tea.owl#isTeaBaseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.tea.com//ontologies/tea.owl#isIngredientOf"/>
+        <rdfs:domain rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaType"/>
+        <rdfs:range rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#hasTeaPortion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tea.com//ontologies/tea.owl#hasTeaPortion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Сколько условных порций чая кладут при заварке (более крепкая или слабая заварка).
+В травяных чаях (чайных напитках), где нет чайных листьев, такая порция равна 0.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Anise -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Anise">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#Spice"/>
+        <rdfs:comment>Анис</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Apple -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Apple">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+        <rdfs:comment>Яблоко</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Barberry -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Barberry">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+        <rdfs:comment>Барбарис</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Bergamot -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Bergamot">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Бергамот</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Black -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Black">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#Oxidized"/>
+        <rdfs:comment xml:lang="en">Черный чай</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#BlackTea -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#BlackTea">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#NamedTeaDrink"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                        <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaPortion"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Черный чай без добавок</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#BlackTeaDrink -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#BlackTeaDrink">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                        <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Black"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.tea.com//ontologies/tea.owl#GreenTeaDrink"/>
+        <owl:disjointWith rdf:resource="http://www.tea.com//ontologies/tea.owl#HerbalTeaDrink"/>
+        <rdfs:comment>Чаи, в составе которых есть черный чай</rdfs:comment>
+        <rdfs:label xml:lang="en">BlackTeaDrink</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#BlackTeaWithBerries -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#BlackTeaWithBerries">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#NamedTeaDrink"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Blueberry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Raspberry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Strawberry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaPortion"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Черный чай с ягодами</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Blackberry -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Blackberry">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+        <rdfs:comment>Ежевика</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Blueberry -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Blueberry">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+        <rdfs:comment>Черника</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Cactus -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Cactus">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Цветки кактуса</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Cardamom -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Cardamom">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#Spice"/>
+        <rdfs:comment>Кардамон</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Chamomile -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Chamomile">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Ромашка</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Cinnamon -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Cinnamon">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#Spice"/>
+        <rdfs:comment>Корица</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Cloves -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Cloves">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#Spice"/>
+        <rdfs:comment>Гвоздика</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Cornflower -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Cornflower">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Василек</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Cranberry -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Cranberry">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+        <rdfs:comment>Клюква</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Currant -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Currant">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+        <rdfs:comment>Смородина</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#CurrantLeaves -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#CurrantLeaves">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Листья смородины</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Dandelion -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Dandelion">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Маргаритка</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#DryLemon -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#DryLemon">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+        <rdfs:comment>Сушеный лимон</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#EarlGrey -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#EarlGrey">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#NamedTeaDrink"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Bergamot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                <owl:allValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Bergamot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaPortion"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Черный чай с добавлением бергамота</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Eucalyptus -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Eucalyptus">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Эвкалипт</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#FlavouredTea -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#FlavouredTea">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Spice"/>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.tea.com//ontologies/tea.owl#PureTea"/>
+        <rdfs:comment>Чай с какими-либо добавками - цветочными, ягодными, фруктовыми или c пряностями.</rdfs:comment>
+        <rdfs:label xml:lang="en">FlavouredTea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition"/>
+        <rdfs:comment>Цветы и травы</rdfs:comment>
+        <rdfs:label xml:lang="en">FlowerAndHerbs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#FruitAndBerry -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#FruitAndBerry">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition"/>
+        <rdfs:comment>Ягоды и фрукты</rdfs:comment>
+        <rdfs:label xml:lang="en">FruitAndBerry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Ginger -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Ginger">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#Spice"/>
+        <rdfs:comment>Имбирь</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#GingerTea -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#GingerTea">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#NamedTeaDrink"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Ginger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaPortion"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Зеленый имбирный чай</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Green -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Green">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#Unoxidized"/>
+        <rdfs:comment xml:lang="en">Зеленый чай</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#GreenTea -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#GreenTea">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#NamedTeaDrink"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                        <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaPortion"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Классический зеленый чай</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#GreenTeaDrink -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#GreenTeaDrink">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                        <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Green"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Чаи, в составе которых есть зеленый чай</rdfs:comment>
+        <rdfs:label xml:lang="en">GreenTeaDrink</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Heather -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Heather">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Вереск</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#HerbalTeaDrink -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#HerbalTeaDrink">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaType"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Травяной или ягодный чай (чайный напиток), в котором отсутствует база - чайные листья.</rdfs:comment>
+        <rdfs:label xml:lang="en">HerbalTeaDrink</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Hibiscus -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Hibiscus">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Гибискус</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#HibiscusTea -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#HibiscusTea">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#NamedTeaDrink"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaType"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                        <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Hibiscus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Honey -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Honey">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#Ingredient"/>
+        <rdfs:comment>Мёд</rdfs:comment>
+        <rdfs:label xml:lang="en">Honey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Hypericum -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Hypericum">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Зверобой</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Ingredient -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Ingredient">
+        <rdfs:comment>Дополнительные ингредиенты, которые мы иногда добавляем в уже готовый чай (не в чайную смесь, а уже в чашку)</rdfs:comment>
+        <rdfs:label xml:lang="en">Ingredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#InterestingTeaDrink -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#InterestingTeaDrink">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Чай, где минимум три добавки</rdfs:comment>
+        <rdfs:label xml:lang="en">InterestingTeaDrink</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Jasmine -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Jasmine">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Жасмин</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#JasmineTea -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#JasmineTea">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#NamedTeaDrink"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Jasmine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaPortion"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Зеленый чай с добавлением жасмина</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Lavender -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Lavender">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Лаванда</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Lemon -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Lemon">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#Ingredient"/>
+        <rdfs:comment>Лимон</rdfs:comment>
+        <rdfs:label xml:lang="en">Lemon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Lemongrass -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Lemongrass">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Лемонграсс</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#LimeTree -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#LimeTree">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Липа</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#LimeTreeTea -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#LimeTreeTea">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#NamedTeaDrink"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaType"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                        <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasAdditionalIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Honey"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#LimeTree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Липовый чай с медом</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Lotus -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Lotus">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Цветки лотоса</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Magnolia -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Magnolia">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Магнолия</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Masala -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Masala">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#NamedTeaDrink"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasAdditionalIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Milk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Cardamom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Cinnamon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Cloves"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Ginger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Pepper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Black"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaPortion"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Индийский рецепт согревающего черного чая с молоком и пряностями</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Melissa -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Melissa">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Мелисса</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Milk -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Milk">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#Ingredient"/>
+        <rdfs:comment>Молоко</rdfs:comment>
+        <rdfs:label xml:lang="en">Milk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#NamedTeaDrink -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#NamedTeaDrink">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+        <rdfs:comment>Список чайных смесей</rdfs:comment>
+        <rdfs:label xml:lang="en">NamedTeaDrink</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Nettles -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Nettles">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Крапива</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Oolong -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Oolong">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#PartiallyOxidized"/>
+        <rdfs:comment xml:lang="en">Улун</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#OolongTea -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#OolongTea">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#NamedTeaDrink"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                        <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Oolong"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Oolong"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaPortion"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Классический улун без добавок</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Orange -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Orange">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+        <rdfs:comment>Апельсиновые корки</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Orchid -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Orchid">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Орхидея</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Oxidized -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Oxidized">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaType"/>
+        <rdfs:comment xml:lang="en">Ферментированный чай</rdfs:comment>
+        <rdfs:label xml:lang="en">Oxidized</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#PartiallyOxidized -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#PartiallyOxidized">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaType"/>
+        <rdfs:comment xml:lang="en">Частично ферментированный чай</rdfs:comment>
+        <rdfs:label xml:lang="en">PartiallyOxidized</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Peach -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Peach">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+        <rdfs:comment>Персик</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Pear -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Pear">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+        <rdfs:comment>Груша</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Pepper -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Pepper">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#Spice"/>
+        <rdfs:comment>Перец</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Pepperint -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Pepperint">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Мята</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#PostFermented -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#PostFermented">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaType"/>
+        <rdfs:comment xml:lang="en">Пост-ферментированный чай</rdfs:comment>
+        <rdfs:label xml:lang="en">PostFermented</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Pu-erh -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Pu-erh">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#PostFermented"/>
+        <rdfs:comment xml:lang="en">Пуэр</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#PureTea -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#PureTea">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlavouredTea"/>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaType"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>&quot;Чистые&quot; чаи безо всяких добавок</rdfs:comment>
+        <rdfs:label xml:lang="en">PureTea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Raspberry -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Raspberry">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+        <rdfs:comment>Малина</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Rose -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Rose">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Роза</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Rosehip -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Rosehip">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+        <rdfs:comment>Шиповник</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Safflower -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Safflower">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Сафлор</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Sage -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Sage">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Шалфей</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#SeaBuckthorn -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#SeaBuckthorn">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Black"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Green"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Oolong"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#White"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Yellow"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Облепиха</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#SeaBuckthornTea -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#SeaBuckthornTea">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#NamedTeaDrink"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaType"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                        <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasAdditionalIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Sugar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#SeaBuckthorn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Облепиховый чай</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Spice -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Spice">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition"/>
+        <rdfs:comment>Пряности</rdfs:comment>
+        <rdfs:label xml:lang="en">Spice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Strawberry -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Strawberry">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+        <rdfs:comment>Клубника</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Sugar -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Sugar">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#Ingredient"/>
+        <rdfs:comment>Сахар</rdfs:comment>
+        <rdfs:label xml:lang="en">Sugar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#TeaDrink -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#TeaDrink">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaType"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaType"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaPortion"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Чаи и чайные напитки: либо содержат в себе базу из одного вида чая (черный, зеленый и т.д.) + возможные добавки, либо это травяные чаи (чайные напитки) на основе одних только добавок без базы из чайных листьев.</rdfs:comment>
+        <rdfs:label xml:lang="en">TeaDrink</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition">
+        <rdfs:comment>Добавки в чай - цветочные, травяные, ягоды, фрукты, специи</rdfs:comment>
+        <rdfs:label xml:lang="en">TeaFlavourAddition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#TeaType -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#TeaType">
+        <rdfs:comment>Типы чая по степени его окисления и ферментации: черный, зеленый, желтый, белый, улун, пуэр</rdfs:comment>
+        <rdfs:label xml:lang="en">TeaType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Thyme -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Thyme">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#Spice"/>
+        <rdfs:comment>Чабрец</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Unoxidized -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Unoxidized">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaType"/>
+        <rdfs:comment xml:lang="en">Не ферментированный чай</rdfs:comment>
+        <rdfs:label xml:lang="en">Unoxidized</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Vanilla -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Vanilla">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#Spice"/>
+        <rdfs:comment>Ваниль</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Violet -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Violet">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+        <rdfs:comment>Фиалка</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#White -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#White">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#Unoxidized"/>
+        <rdfs:comment xml:lang="en">Белый чай</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#Yellow -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#Yellow">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#PartiallyOxidized"/>
+        <rdfs:comment xml:lang="en">Желтый чай</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#YellowTea -->
+
+    <owl:Class rdf:about="http://www.tea.com//ontologies/tea.owl#YellowTea">
+        <rdfs:subClassOf rdf:resource="http://www.tea.com//ontologies/tea.owl#NamedTeaDrink"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasFlavourAddition"/>
+                        <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Yellow"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.tea.com//ontologies/tea.owl#Yellow"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tea.com//ontologies/tea.owl#hasTeaPortion"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Желтый чай без добавок</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#BlackTeaExample -->
+
+    <owl:NamedIndividual rdf:about="http://www.tea.com//ontologies/tea.owl#BlackTeaExample">
+        <rdf:type rdf:resource="http://www.tea.com//ontologies/tea.owl#BlackTea"/>
+        <hasTeaPortion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasTeaPortion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#BlackTeaWithBerriesExample -->
+
+    <owl:NamedIndividual rdf:about="http://www.tea.com//ontologies/tea.owl#BlackTeaWithBerriesExample">
+        <rdf:type rdf:resource="http://www.tea.com//ontologies/tea.owl#BlackTeaWithBerries"/>
+        <hasTeaPortion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasTeaPortion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#EarlGreyExample -->
+
+    <owl:NamedIndividual rdf:about="http://www.tea.com//ontologies/tea.owl#EarlGreyExample">
+        <rdf:type rdf:resource="http://www.tea.com//ontologies/tea.owl#EarlGrey"/>
+        <hasTeaPortion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasTeaPortion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#EarlGreyExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.tea.com//ontologies/tea.owl#EarlGreyExample1">
+        <rdf:type rdf:resource="http://www.tea.com//ontologies/tea.owl#EarlGrey"/>
+        <hasTeaPortion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasTeaPortion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#HibiscusTeaExample -->
+
+    <owl:NamedIndividual rdf:about="http://www.tea.com//ontologies/tea.owl#HibiscusTeaExample">
+        <rdf:type rdf:resource="http://www.tea.com//ontologies/tea.owl#HibiscusTea"/>
+        <hasTeaPortion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasTeaPortion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tea.com//ontologies/tea.owl#JasmineTeaExample -->
+
+    <owl:NamedIndividual rdf:about="http://www.tea.com//ontologies/tea.owl#JasmineTeaExample">
+        <rdf:type rdf:resource="http://www.tea.com//ontologies/tea.owl#JasmineTea"/>
+        <hasTeaPortion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasTeaPortion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Anise"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Cardamom"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Cinnamon"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Cloves"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Ginger"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Pepper"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Thyme"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Vanilla"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Apple"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Barberry"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Blackberry"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Blueberry"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Cranberry"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Currant"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#DryLemon"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Orange"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Peach"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Pear"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Raspberry"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Rosehip"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#SeaBuckthorn"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Strawberry"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Bergamot"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Cactus"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Chamomile"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Cornflower"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#CurrantLeaves"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Dandelion"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Eucalyptus"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Heather"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Hibiscus"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Hypericum"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Jasmine"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Lavender"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Lemongrass"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#LimeTree"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Lotus"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Magnolia"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Melissa"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Nettles"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Orchid"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Pepperint"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Rose"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Safflower"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Sage"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Violet"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Black"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Green"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Oolong"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Pu-erh"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#White"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Yellow"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#FlowerAndHerbs"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#FruitAndBerry"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Spice"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Honey"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Lemon"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Milk"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Sugar"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Ingredient"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#TeaDrink"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#TeaFlavourAddition"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#TeaType"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Oxidized"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#PartiallyOxidized"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#PostFermented"/>
+            <rdf:Description rdf:about="http://www.tea.com//ontologies/tea.owl#Unoxidized"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
