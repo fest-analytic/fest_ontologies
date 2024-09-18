@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/ontology/memoir">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Biographical_and_Memoir"/>
+    <rdfs:label xml:lang="en">memoir</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/psychological_fiction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Social_and_Political_Commentary"/>
+    <rdfs:label xml:lang="en">psychological fiction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Science_Fiction_and_Fantasy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Science Fiction and Fantasy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/high_fantasy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_Fiction_and_Fantasy"/>
+    <rdfs:label xml:lang="en">high fantasy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/astrophysics">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_and_Education"/>
+    <rdfs:label xml:lang="en">astrophysics</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/family_drama">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Drama_and_Tragedy"/>
+    <rdfs:label xml:lang="en">family drama</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/tragedy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Drama_and_Tragedy"/>
+    <rdfs:label xml:lang="en">tragedy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/educational">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_and_Education"/>
+    <rdfs:label xml:lang="en">educational</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/management">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_and_Education"/>
+    <rdfs:label xml:lang="en">management</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/dark_fiction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Drama_and_Tragedy"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Social_and_Political_Commentary"/>
+    <rdfs:label xml:lang="en">dark fiction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/motivational">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Philosophy,_Psychology,_and_Self-Help"/>
+    <rdfs:label xml:lang="en">motivational</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/philosophy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Philosophy,_Psychology,_and_Self-Help"/>
+    <rdfs:label xml:lang="en">philosophy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/dark_fantasy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_Fiction_and_Fantasy"/>
+    <rdfs:label xml:lang="en">dark fantasy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/picture_book">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Children's_and_Young_Adult"/>
+    <rdfs:label xml:lang="en">picture book</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/young_adult">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Children's_and_Young_Adult"/>
+    <rdfs:label xml:lang="en">young adult</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/literary_fiction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Social_and_Political_Commentary"/>
+    <rdfs:label xml:lang="en">literary fiction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Science_and_Education">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Science and Education</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/children's_literature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Children's_and_Young_Adult"/>
+    <rdfs:label xml:lang="en">children's literature</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/family_saga">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Social_and_Political_Commentary"/>
+    <rdfs:label xml:lang="en">family saga</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/post-apocalyptic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_Fiction_and_Fantasy"/>
+    <rdfs:label xml:lang="en">post-apocalyptic</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/science_writing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_and_Education"/>
+    <rdfs:label xml:lang="en">science writing</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/noir">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Crime_and_Mystery"/>
+    <rdfs:label xml:lang="en">noir</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/social_science_fiction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_Fiction_and_Fantasy"/>
+    <rdfs:label xml:lang="en">social science fiction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Philosophy,_Psychology,_and_Self-Help">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Philosophy, Psychology, and Self-Help</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Children's_and_Young_Adult">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Children's and Young Adult</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/historical_novel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Historical"/>
+    <rdfs:label xml:lang="en">historical novel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/self-help">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Philosophy,_Psychology,_and_Self-Help"/>
+    <rdfs:label xml:lang="en">self-help</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/middle_grade">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Children's_and_Young_Adult"/>
+    <rdfs:label xml:lang="en">middle grade</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/historical">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Historical"/>
+    <rdfs:label xml:lang="en">historical</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/historical_drama">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Historical"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Drama_and_Tragedy"/>
+    <rdfs:label xml:lang="en">historical drama</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/urban_fantasy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_Fiction_and_Fantasy"/>
+    <rdfs:label xml:lang="en">urban fantasy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/social_commentary">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Social_and_Political_Commentary"/>
+    <rdfs:label xml:lang="en">social commentary</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/young_adult_historical_novel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Children's_and_Young_Adult"/>
+    <rdfs:label xml:lang="en">young adult historical novel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/essay/literature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_and_Education"/>
+    <rdfs:label xml:lang="en">essay/literature</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/epic_fantasy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_Fiction_and_Fantasy"/>
+    <rdfs:label xml:lang="en">epic fantasy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/psychology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Philosophy,_Psychology,_and_Self-Help"/>
+    <rdfs:label xml:lang="en">psychology</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Drama_and_Tragedy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Drama and Tragedy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/biography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Biographical_and_Memoir"/>
+    <rdfs:label xml:lang="en">biography</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/illustrated_books">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_and_Education"/>
+    <rdfs:label xml:lang="en">illustrated books</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/science">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_and_Education"/>
+    <rdfs:label xml:lang="en">science</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/children's_fiction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Children's_and_Young_Adult"/>
+    <rdfs:label xml:lang="en">children's fiction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/conspiracy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Crime_and_Mystery"/>
+    <rdfs:label xml:lang="en">conspiracy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/early_childhood">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Children's_and_Young_Adult"/>
+    <rdfs:label xml:lang="en">early childhood</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Social_and_Political_Commentary">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Social and Political Commentary</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Crime_and_Mystery">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Crime and Mystery</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Historical">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Historical</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/steampunk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_Fiction_and_Fantasy"/>
+    <rdfs:label xml:lang="en">steampunk</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/health">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_and_Education"/>
+    <rdfs:label xml:lang="en">health</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/philosophical_novel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Philosophy,_Psychology,_and_Self-Help"/>
+    <rdfs:label xml:lang="en">philosophical novel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/personal_development">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_and_Education"/>
+    <rdfs:label xml:lang="en">personal development</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/new-age_spiritual_novel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_and_Education"/>
+    <rdfs:label xml:lang="en">new-age spiritual novel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/crime_fiction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Crime_and_Mystery"/>
+    <rdfs:label xml:lang="en">crime fiction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/social_science">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Social_and_Political_Commentary"/>
+    <rdfs:label xml:lang="en">social science</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/magical_realism">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_Fiction_and_Fantasy"/>
+    <rdfs:label xml:lang="en">magical realism</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/children's_novel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Children's_and_Young_Adult"/>
+    <rdfs:label xml:lang="en">children's novel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/political_fiction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Social_and_Political_Commentary"/>
+    <rdfs:label xml:lang="en">political fiction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/thriller">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Crime_and_Mystery"/>
+    <rdfs:label xml:lang="en">thriller</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/historical_fiction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Historical"/>
+    <rdfs:label xml:lang="en">historical fiction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/fantasy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_Fiction_and_Fantasy"/>
+    <rdfs:label xml:lang="en">fantasy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/young_adult_fiction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Children's_and_Young_Adult"/>
+    <rdfs:label xml:lang="en">young adult fiction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/cyberpunk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_Fiction_and_Fantasy"/>
+    <rdfs:label xml:lang="en">cyberpunk</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/mystery">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Crime_and_Mystery"/>
+    <rdfs:label xml:lang="en">mystery</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/manual">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_and_Education"/>
+    <rdfs:label xml:lang="en">manual</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/socialist_realist_novel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Social_and_Political_Commentary"/>
+    <rdfs:label xml:lang="en">socialist realist novel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/health_&amp;_wellness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_and_Education"/>
+    <rdfs:label xml:lang="en">health &amp; wellness</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/business">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_and_Education"/>
+    <rdfs:label xml:lang="en">business</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/historical_non-fiction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Historical"/>
+    <rdfs:label xml:lang="en">historical non-fiction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Biographical_and_Memoir">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Biographical and Memoir</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/dystopian">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_Fiction_and_Fantasy"/>
+    <rdfs:label xml:lang="en">dystopian</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/space_opera">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_Fiction_and_Fantasy"/>
+    <rdfs:label xml:lang="en">space opera</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/business_fable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_and_Education"/>
+    <rdfs:label xml:lang="en">business fable</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/science_fiction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_Fiction_and_Fantasy"/>
+    <rdfs:label xml:lang="en">science fiction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/autobiography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Biographical_and_Memoir"/>
+    <rdfs:label xml:lang="en">autobiography</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/fantasy_adventure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_Fiction_and_Fantasy"/>
+    <rdfs:label xml:lang="en">fantasy adventure</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/popular_science">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_and_Education"/>
+    <rdfs:label xml:lang="en">popular science</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/magic_realism">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology/Science_Fiction_and_Fantasy"/>
+    <rdfs:label xml:lang="en">magic realism</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
