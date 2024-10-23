@@ -1,2 +1,2 @@
-# fest_ontologies
-Local custom and global ontologies
+# ontologies
+Saved library of open-sources ontologies
