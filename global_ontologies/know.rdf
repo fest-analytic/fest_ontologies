@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dcat="http://www.w3.org/ns/dcat#"
+   xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:schema="https://schema.org/"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:void="http://rdfs.org/ns/void#"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns="https://know.dev/">
+  <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
+    <owl:equivalentProperty rdf:resource="https://know.dev/id"/>
+  </rdf:Description>
+  <owl:Ontology rdf:about="https://know.dev/">
+    <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
+    <owl:imports rdf:resource="https://schema.org/version/latest/schemaorg-current-https.ttl"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="https://know.dev/Activity">
+    <rdfs:label xml:lang="en">Activity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Event"/>
+    <glyph>🚣</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Airport">
+    <rdfs:label xml:lang="en">Airport</rdfs:label>
+    <rdfs:label xml:lang="sv">Flygplats</rdfs:label>
+    <rdfs:label xml:lang="fi">Lentokenttä</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Place"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/Airport"/>
+    <glyph>🛫</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Appointment">
+    <rdfs:label xml:lang="en">Appointment</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Event"/>
+    <glyph>🕙</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Birth">
+    <rdfs:label xml:lang="en">Birth</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Event"/>
+    <glyph>👩‍🍼</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Birthday">
+    <rdfs:label xml:lang="en">Birthday</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Event"/>
+    <glyph>🎂</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/BirthdayParty">
+    <rdfs:label xml:lang="en">Birthday Party</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Party"/>
+    <glyph>🎉</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/BuddhistTemple">
+    <rdfs:label xml:lang="en">Buddhist Temple</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Temple"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/BuddhistTemple"/>
+    <glyph>☸️</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Cafe">
+    <rdfs:label xml:lang="en">Cafe</rdfs:label>
+    <rdfs:label xml:lang="fi">Kahvila</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Place"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/CafeOrCoffeeShop"/>
+    <glyph>☕</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Church">
+    <rdfs:label xml:lang="en">Chuch</rdfs:label>
+    <rdfs:label xml:lang="fi">Kirkko</rdfs:label>
+    <rdfs:label xml:lang="sv">Kyrka</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Temple"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/Church"/>
+    <glyph>⛪</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Class">
+    <rdfs:label xml:lang="en">Class</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Group"/>
+    <glyph>🧑‍🏫</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Community">
+    <rdfs:label xml:lang="en">Community</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Group"/>
+    <glyph>🏘️</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Company">
+    <rdfs:label xml:lang="en">Company</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Organization"/>
+    <glyph>📃</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Conference">
+    <rdfs:label xml:lang="en">Conference</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Meeting"/>
+    <owl:disjointWith rdf:resource="https://know.dev/Meetup"/>
+    <glyph>📛</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Congregation">
+    <rdfs:label xml:lang="en">Congregation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Group"/>
+    <glyph>⛪</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Consortium">
+    <rdfs:label xml:lang="en">Consortium</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Organization"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/Consortium"/>
+    <glyph>🌐</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Corporation">
+    <rdfs:label xml:lang="en">Corporation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Organization"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/Corporation"/>
+    <glyph>📃</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Death">
+    <rdfs:label xml:lang="en">Death</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Event"/>
+    <glyph>⚰️</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Event">
+    <rdfs:label xml:lang="en">Event</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Thing"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/Event"/>
+    <glyph>📅</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Family">
+    <rdfs:label xml:lang="en">Family</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Group"/>
+    <glyph>👪</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/File">
+    <rdfs:label xml:lang="en">File</rdfs:label>
+    <rdfs:label xml:lang="fi">Tiedosto</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Thing"/>
+    <glyph>📄</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Government">
+    <rdfs:label xml:lang="en">Government</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Organization"/>
+    <glyph>🎩</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Graduation">
+    <rdfs:label xml:lang="en">Graduation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Event"/>
+    <glyph>🎓</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Group">
+    <rdfs:label xml:lang="en">Group</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Thing"/>
+    <glyph>🧑‍🤝‍🧑</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/HinduTemple">
+    <rdfs:label xml:lang="en">Hindu Temple</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Temple"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/HinduTemple"/>
+    <glyph>🛕</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Holiday">
+    <rdfs:label xml:lang="en">Holiday</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Event"/>
+    <glyph>🏖️</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Hospital">
+    <rdfs:label xml:lang="en">Hospital</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Place"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/Hospital"/>
+    <glyph>🏥</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Hotel">
+    <rdfs:label xml:lang="en">Hotel</rdfs:label>
+    <rdfs:label xml:lang="fi">Hotelli</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Place"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/Hotel"/>
+    <glyph>🏨</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Landmark">
+    <rdfs:label xml:lang="en">Landmark</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Place"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/LandmarksOrHistoricalBuildings"/>
+    <glyph>📍</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Link">
+    <rdfs:label xml:lang="en">Link</rdfs:label>
+    <rdfs:label xml:lang="fi">Linkki</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Thing"/>
+    <glyph>🔗</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Meeting">
+    <rdfs:label xml:lang="en">Meeting</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Event"/>
+    <glyph>🤝</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Meetup">
+    <rdfs:label xml:lang="en">Meetup</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Meeting"/>
+    <glyph>🍻</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Mosque">
+    <rdfs:label xml:lang="en">Mosque</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Temple"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/Mosque"/>
+    <glyph>🕌</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Nationality">
+    <rdfs:label xml:lang="en">Nationality</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Group"/>
+    <glyph>🪪</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Organization">
+    <rdfs:label xml:lang="en">Organization</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Group"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/Organization"/>
+    <glyph>🗃️</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Party">
+    <rdfs:label xml:lang="en">Party</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Event"/>
+    <glyph>🎉</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Person">
+    <rdfs:label xml:lang="fi">Henkilö</rdfs:label>
+    <rdfs:label xml:lang="tr">Kişi</rdfs:label>
+    <rdfs:label xml:lang="de">Person</rdfs:label>
+    <rdfs:label xml:lang="en">Person</rdfs:label>
+    <rdfs:label xml:lang="sv">Person</rdfs:label>
+    <rdfs:label xml:lang="es">Persona</rdfs:label>
+    <rdfs:label xml:lang="eo">Persono</rdfs:label>
+    <rdfs:label xml:lang="pt">Pessoa</rdfs:label>
+    <rdfs:label xml:lang="uk">Особа</rdfs:label>
+    <rdfs:label xml:lang="ar">شخص</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Thing"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/Person"/>
+    <glyph>🧑</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Place">
+    <rdfs:label xml:lang="en">Place</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Thing"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/Place"/>
+    <glyph>📍</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Pub">
+    <rdfs:label xml:lang="en">Pub</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Place"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/BarOrPub"/>
+    <glyph>🍺</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Restaurant">
+    <rdfs:label xml:lang="fi">Ravintola</rdfs:label>
+    <rdfs:label xml:lang="en">Restaurant</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Place"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/Restaurant"/>
+    <glyph>🍽️</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/School">
+    <rdfs:label xml:lang="en">School</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Organization"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/School"/>
+    <glyph>🏫</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Synagogue">
+    <rdfs:label xml:lang="en">Synagogue</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Temple"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/Synagogue"/>
+    <glyph>🕍</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Temple">
+    <rdfs:label xml:lang="en">Temple</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Place"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/PlaceOfWorship"/>
+    <glyph>🛐</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Thing">
+    <rdfs:label xml:lang="eo">Afero</rdfs:label>
+    <rdfs:label xml:lang="fi">Asia</rdfs:label>
+    <rdfs:label xml:lang="pt">Coisa</rdfs:label>
+    <rdfs:label xml:lang="es">Cosa</rdfs:label>
+    <rdfs:label xml:lang="de">Ding</rdfs:label>
+    <rdfs:label xml:lang="sv">Sak</rdfs:label>
+    <rdfs:label xml:lang="en">Thing</rdfs:label>
+    <rdfs:label xml:lang="tr">Şey</rdfs:label>
+    <rdfs:label xml:lang="uk">Річ</rdfs:label>
+    <rdfs:label xml:lang="ar">شيء</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/Thing"/>
+    <glyph>∃</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/University">
+    <rdfs:label xml:lang="en">University</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Organization"/>
+    <owl:equivalentClass rdf:resource="https://schema.org/CollegeOrUniversity"/>
+    <glyph>🏫</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Venue">
+    <rdfs:label xml:lang="en">Venue</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Place"/>
+    <glyph>🏪</glyph>
+  </owl:Class>
+  <owl:Class rdf:about="https://know.dev/Wedding">
+    <rdfs:label xml:lang="en">Wedding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://know.dev/Event"/>
+    <glyph>💒</glyph>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="https://know.dev/account">
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Account</rdfs:label>
+    <rdfs:label xml:lang="sv">Konto</rdfs:label>
+    <rdfs:label xml:lang="fi">Tili</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <glyph>👤</glyph>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/age">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Age</rdfs:label>
+    <rdfs:label xml:lang="fi">Ikä</rdfs:label>
+    <rdfs:label xml:lang="sv">Ålder</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>🕰️</glyph>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/alias">
+    <rdfs:comment xml:lang="en">An alias or nickname of this person, if known.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Alias</rdfs:label>
+    <rdfs:label xml:lang="fi">Alias</rdfs:label>
+    <rdfs:label xml:lang="sv">Alias</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>🔀</glyph>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/ancestor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Ancestor</rdfs:label>
+    <rdfs:label xml:lang="fi">Esivanhempi</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/relative"/>
+    <owl:inverseOf rdf:resource="https://know.dev/descendant"/>
+    <glyph>🧑‍🌾</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/aunt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Aunt</rdfs:label>
+    <rdfs:label xml:lang="fi">Täti</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/pibling"/>
+    <glyph>👩</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/birth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Birth</rdfs:label>
+    <rdfs:label xml:lang="sv">Födelse</rdfs:label>
+    <rdfs:label xml:lang="fi">Syntymä</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Birth"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <glyph>👩‍🍼</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/brother">
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Brother</rdfs:label>
+    <rdfs:label xml:lang="fi">Veli</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/sibling"/>
+    <glyph>👦</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/child">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Child</rdfs:label>
+    <rdfs:label xml:lang="fi">Lapsi</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/descendant"/>
+    <owl:inverseOf rdf:resource="https://know.dev/parent"/>
+    <owl:propertyDisjointWith rdf:resource="https://know.dev/parent"/>
+    <glyph>🧒</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/colleague">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Colleague</rdfs:label>
+    <rdfs:label xml:lang="fi">Kollega</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/knows"/>
+    <glyph>🧑‍💼</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/cousin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Cousin</rdfs:label>
+    <rdfs:label xml:lang="fi">Serkku</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/relative"/>
+    <glyph>🧒</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/daughter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Daughter</rdfs:label>
+    <rdfs:label xml:lang="fi">Tytär</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/child"/>
+    <glyph>👧</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/death">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Death</rdfs:label>
+    <rdfs:label xml:lang="sv">Död</rdfs:label>
+    <rdfs:label xml:lang="fi">Kuolema</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Death"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <glyph>⚰️</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/descendant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Descendant</rdfs:label>
+    <rdfs:label xml:lang="fi">Jälkeläinen</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/relative"/>
+    <glyph>🧒</glyph>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/email">
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="sv">E-post</rdfs:label>
+    <rdfs:label xml:lang="en">Email</rdfs:label>
+    <rdfs:label xml:lang="fi">Sähköposti</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>✉️</glyph>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/end">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Event"/>
+    <rdfs:label xml:lang="en">End</rdfs:label>
+    <rdfs:label xml:lang="fi">Loppu</rdfs:label>
+    <rdfs:label xml:lang="sv">Slutet</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>🏁</glyph>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/father">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Father</rdfs:label>
+    <rdfs:label xml:lang="fi">Isä</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/parent"/>
+    <glyph>👨</glyph>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/glyph">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Thing"/>
+    <rdfs:label xml:lang="fi">Glyfi</rdfs:label>
+    <rdfs:label xml:lang="en">Glyph</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <glyph>🔣</glyph>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/grandchild">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Grandchild</rdfs:label>
+    <rdfs:label xml:lang="fi">Lapsenlapsi</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/descendant"/>
+    <owl:inverseOf rdf:resource="https://know.dev/grandparent"/>
+    <owl:propertyChainAxiom>
+      <rdf:Description>
+        <rdf:first rdf:resource="https://know.dev/child"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="https://know.dev/child"/>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </rdf:Description>
+        </rdf:rest>
+      </rdf:Description>
+    </owl:propertyChainAxiom>
+    <glyph>🧒</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/granddaughter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Granddaughter</rdfs:label>
+    <rdfs:label xml:lang="fi">Lapsentytär</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/grandchild"/>
+    <glyph>👧</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/grandfather">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Grandfather</rdfs:label>
+    <rdfs:label xml:lang="fi">Isoisä</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/grandparent"/>
+    <glyph>👴</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/grandmother">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Grandmother</rdfs:label>
+    <rdfs:label xml:lang="fi">Isoäiti</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/grandparent"/>
+    <glyph>👵</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/grandparent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Grandparent</rdfs:label>
+    <rdfs:label xml:lang="fi">Isovanhempi</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/ancestor"/>
+    <owl:propertyChainAxiom>
+      <rdf:Description>
+        <rdf:first rdf:resource="https://know.dev/parent"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="https://know.dev/parent"/>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </rdf:Description>
+        </rdf:rest>
+      </rdf:Description>
+    </owl:propertyChainAxiom>
+    <glyph>🧓</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/grandson">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Grandson</rdfs:label>
+    <rdfs:label xml:lang="fi">Lapsenpoika</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/grandchild"/>
+    <glyph>🧒</glyph>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/honorific">
+    <rdfs:comment xml:lang="en">The honorific title of this person, if known.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="sv">Hederstitel</rdfs:label>
+    <rdfs:label xml:lang="en">Honorific</rdfs:label>
+    <rdfs:label xml:lang="eo">Honortitolo</rdfs:label>
+    <rdfs:label xml:lang="fi">Kunnianimike</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>🎖️</glyph>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/husband">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="fi">Aviomies</rdfs:label>
+    <rdfs:label xml:lang="en">Husband</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/spouse"/>
+    <glyph>👨</glyph>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/id">
+    <rdfs:domain rdf:resource="https://know.dev/Thing"/>
+    <rdfs:label xml:lang="es">Identificador</rdfs:label>
+    <rdfs:label xml:lang="pt">Identificador</rdfs:label>
+    <rdfs:label xml:lang="en">Identifier</rdfs:label>
+    <rdfs:label xml:lang="sv">Identifierare</rdfs:label>
+    <rdfs:label xml:lang="de">Identifikator</rdfs:label>
+    <rdfs:label xml:lang="eo">Identilo</rdfs:label>
+    <rdfs:label xml:lang="tr">Kimlik</rdfs:label>
+    <rdfs:label xml:lang="fi">Tunniste</rdfs:label>
+    <rdfs:label xml:lang="uk">Ідентифікатор</rdfs:label>
+    <rdfs:label xml:lang="ar">معرف</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>🆔</glyph>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/knows">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Knows</rdfs:label>
+    <rdfs:label xml:lang="sv">Känner</rdfs:label>
+    <rdfs:label xml:lang="fi">Tuntee</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <glyph>🤝</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/link">
+    <rdfs:domain rdf:resource="https://know.dev/Thing"/>
+    <rdfs:label xml:lang="en">Link</rdfs:label>
+    <rdfs:label xml:lang="fi">Linkki</rdfs:label>
+    <rdfs:label xml:lang="sv">Länk</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Link"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <glyph>🔗</glyph>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/logo">
+    <rdfs:domain rdf:resource="https://know.dev/Group"/>
+    <rdfs:label xml:lang="en">Logo</rdfs:label>
+    <rdfs:label xml:lang="fi">Logo</rdfs:label>
+    <rdfs:label xml:lang="sv">Logo</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>🔶</glyph>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/member">
+    <rdfs:domain rdf:resource="https://know.dev/Group"/>
+    <rdfs:label xml:lang="fi">Jäsen</rdfs:label>
+    <rdfs:label xml:lang="sv">Medlem</rdfs:label>
+    <rdfs:label xml:lang="en">Member</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:inverseOf rdf:resource="https://know.dev/memberOf"/>
+    <glyph>🧑‍🤝‍🧑</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/memberOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="fi">Jäsenyys</rdfs:label>
+    <rdfs:label xml:lang="sv">Medlemskap</rdfs:label>
+    <rdfs:label xml:lang="en">Member Of</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Group"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <glyph>🎗️</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/mother">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Mother</rdfs:label>
+    <rdfs:label xml:lang="fi">Äiti</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/parent"/>
+    <glyph>👩</glyph>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/name">
+    <rdfs:domain rdf:resource="https://know.dev/Thing"/>
+    <rdfs:label xml:lang="tr">Ad</rdfs:label>
+    <rdfs:label xml:lang="de">Name</rdfs:label>
+    <rdfs:label xml:lang="en">Name</rdfs:label>
+    <rdfs:label xml:lang="sv">Namn</rdfs:label>
+    <rdfs:label xml:lang="fi">Nimi</rdfs:label>
+    <rdfs:label xml:lang="es">Nombre</rdfs:label>
+    <rdfs:label xml:lang="pt">Nome</rdfs:label>
+    <rdfs:label xml:lang="eo">Nomo</rdfs:label>
+    <rdfs:label xml:lang="uk">Назва</rdfs:label>
+    <rdfs:label xml:lang="ar">اسم</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>🎫</glyph>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/nationality">
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="fi">Kansallisuus</rdfs:label>
+    <rdfs:label xml:lang="sv">Nationalitet</rdfs:label>
+    <rdfs:label xml:lang="en">Nationality</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>🪪</glyph>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/nephew">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Nephew</rdfs:label>
+    <rdfs:label xml:lang="fi">Sisarenpoika</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/nibling"/>
+    <glyph>👦</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/nibling">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:comment xml:lang="en">Niece or nephew.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Nibling</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/relative"/>
+    <owl:inverseOf rdf:resource="https://know.dev/pibling"/>
+    <glyph>🧒</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/niece">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Niece</rdfs:label>
+    <rdfs:label xml:lang="fi">Sisarentytär</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/nibling"/>
+    <glyph>👧</glyph>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/note">
+    <rdfs:domain rdf:resource="https://know.dev/Thing"/>
+    <rdfs:label xml:lang="sv">Anteckning</rdfs:label>
+    <rdfs:label xml:lang="fi">Merkintä</rdfs:label>
+    <rdfs:label xml:lang="en">Note</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>📝</glyph>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/parent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Parent</rdfs:label>
+    <rdfs:label xml:lang="fi">Vanhempi</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/ancestor"/>
+    <glyph>🧑</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/partner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="fi">Kumppani</rdfs:label>
+    <rdfs:label xml:lang="en">Partner</rdfs:label>
+    <rdfs:label xml:lang="sv">Partner</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/knows"/>
+    <glyph>🧑</glyph>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/phone">
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Phone</rdfs:label>
+    <rdfs:label xml:lang="fi">Puhelin</rdfs:label>
+    <rdfs:label xml:lang="sv">Telefon</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>📞</glyph>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/photo">
+    <rdfs:domain rdf:resource="https://know.dev/Thing"/>
+    <rdfs:label xml:lang="sv">Foto</rdfs:label>
+    <rdfs:label xml:lang="en">Photo</rdfs:label>
+    <rdfs:label xml:lang="fi">Valokuva</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>📷</glyph>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/pibling">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:comment xml:lang="en">Parent's sibling (aunt or uncle).</rdfs:comment>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Pibling</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/relative"/>
+    <glyph>🧑</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/place">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Event"/>
+    <rdfs:label xml:lang="fi">Paikka</rdfs:label>
+    <rdfs:label xml:lang="en">Place</rdfs:label>
+    <rdfs:label xml:lang="sv">Plats</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Place"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <glyph>📍</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/relative">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:comment xml:lang="en">A person connected by blood or marriage.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Relative</rdfs:label>
+    <rdfs:label xml:lang="sv">Släkting</rdfs:label>
+    <rdfs:label xml:lang="fi">Sukulainen</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/knows"/>
+    <glyph>🧑</glyph>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/sex">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="sv">Kön</rdfs:label>
+    <rdfs:label xml:lang="en">Sex</rdfs:label>
+    <rdfs:label xml:lang="fi">Sukupuoli</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>⚥</glyph>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/sibling">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Sibling</rdfs:label>
+    <rdfs:label xml:lang="fi">Sisarus</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/relative"/>
+    <glyph>👦</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/sister">
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="fi">Sisko</rdfs:label>
+    <rdfs:label xml:lang="en">Sister</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/sibling"/>
+    <glyph>👧</glyph>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/size">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Thing"/>
+    <rdfs:label xml:lang="fi">Koko</rdfs:label>
+    <rdfs:label xml:lang="en">Size</rdfs:label>
+    <rdfs:label xml:lang="sv">Storlek</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>📏</glyph>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/sizeInBytes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/File"/>
+    <rdfs:label xml:lang="fi">Koko tavuina</rdfs:label>
+    <rdfs:label xml:lang="en">Size in Bytes</rdfs:label>
+    <rdfs:label xml:lang="sv">Storlek i byte</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/size"/>
+    <glyph>💾</glyph>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/son">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="fi">Poika</rdfs:label>
+    <rdfs:label xml:lang="en">Son</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/child"/>
+    <glyph>👦</glyph>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/speaks">
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="fi">Puhuu</rdfs:label>
+    <rdfs:label xml:lang="en">Speaks</rdfs:label>
+    <rdfs:label xml:lang="sv">Talar</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>💬</glyph>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/spouse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="fi">Puoliso</rdfs:label>
+    <rdfs:label xml:lang="en">Spouse</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/partner"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/relative"/>
+    <glyph>🧑</glyph>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/start">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Event"/>
+    <rdfs:label xml:lang="fi">Alku</rdfs:label>
+    <rdfs:label xml:lang="en">Start</rdfs:label>
+    <rdfs:label xml:lang="sv">Start</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>▶️</glyph>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/stepchild">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="fi">Lapsipuoli</rdfs:label>
+    <rdfs:label xml:lang="en">Stepchild</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/relative"/>
+    <owl:inverseOf rdf:resource="https://know.dev/stepparent"/>
+    <glyph>🧒</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/stepdaughter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Stepdaughter</rdfs:label>
+    <rdfs:label xml:lang="fi">Tytärpuoli</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/stepchild"/>
+    <glyph>👧</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/stepfather">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="fi">Isäpuoli</rdfs:label>
+    <rdfs:label xml:lang="en">Stepfather</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/stepparent"/>
+    <glyph>👨</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/stepmother">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Stepmother</rdfs:label>
+    <rdfs:label xml:lang="fi">Äitipuoli</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/stepparent"/>
+    <glyph>👩</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/stepparent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="en">Stepparent</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/relative"/>
+    <glyph>🧑</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/stepson">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="fi">Poikapuoli</rdfs:label>
+    <rdfs:label xml:lang="en">Stepson</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/stepchild"/>
+    <glyph>👦</glyph>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/uncle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="fi">Setä</rdfs:label>
+    <rdfs:label xml:lang="en">Uncle</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/pibling"/>
+    <glyph>👨</glyph>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://know.dev/url">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Link"/>
+    <rdfs:label xml:lang="es">LRU</rdfs:label>
+    <rdfs:label xml:lang="de">URL</rdfs:label>
+    <rdfs:label xml:lang="en">URL</rdfs:label>
+    <rdfs:label xml:lang="eo">URL</rdfs:label>
+    <rdfs:label xml:lang="pt">URL</rdfs:label>
+    <rdfs:label xml:lang="sv">URL</rdfs:label>
+    <rdfs:label xml:lang="tr">URL</rdfs:label>
+    <rdfs:label xml:lang="fi">URL-osoite</rdfs:label>
+    <rdfs:label xml:lang="uk">URL-адреси</rdfs:label>
+    <rdfs:label xml:lang="ar">محدد موقع الموارد الموحد</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <glyph>🔗</glyph>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://know.dev/wife">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="https://know.dev/Person"/>
+    <rdfs:label xml:lang="fi">Vaimo</rdfs:label>
+    <rdfs:label xml:lang="en">Wife</rdfs:label>
+    <rdfs:range rdf:resource="https://know.dev/Person"/>
+    <rdfs:subPropertyOf rdf:resource="https://know.dev/spouse"/>
+    <glyph>👩</glyph>
+  </owl:ObjectProperty>
+</rdf:RDF>
